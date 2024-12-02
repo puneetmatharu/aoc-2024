@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: ruff
+        description: Lint Python files using ruff.
+        args: ["check", "--line-length=200"]
+        language: python
+        types: [file, python]
